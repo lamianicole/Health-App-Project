@@ -57,35 +57,31 @@
 <!-------------------- welcome ----flexbox main, und butttons---------------->
     <main>
     <section class="welcome">
-        <div class="welcome-left">
+        <div class="welcome-img-container">
             <img src="./assets/img/Image-sports.png" alt="smiling woman in sports dress">
         </div>
 
-        <div class="welcome-right">
-            <div>
+        <div class="welcome-description">
+            <div class="border-green">
                 <h3>Transform Your ❤️  Health with</h3>
-            <!-- denk nach! linie bau ich mit border unten?-->
+            </div>
+            <div class="personalized"></div>
                 <h1>Personalized Nutrition Coaching</h1>
+
                 <p>Welcome to Nutritionist, your partner in achieving optimal health through personalized nutrition coaching. Our certified nutritionists are here to guide you on your weight loss journey, providing customized plans and ongoing support. Start your transformation today and experience the power of personalized nutrition coaching.</p>
-            </div>
-            <div>
                 <!-- buttons flex -->
+            <div class ="welcome-buttons">
+                <a href="#" class="starter-btn">Get Starter Today</a>
+                <a href="#" class="demo-btn">Book a Demo</a> 
+            </div>   
+                <!-- testimonials flex, 3x img, übereinander, Minuswerte -->
+                <div class="customers">
+            <div class="customer-profiles">
+                <img src="./assets/img/Image-testimonial-one.png" alt="female customer in pink sweater">
+                <img src="./assets/img/Image-testimonial-two.png" alt="female customer in yellow sweater">
+                <img src="./assets/img/Image-testimonial-three.png" alt="female customer in green sweater">
             </div>
-            <div>
-                <!-- testimonials flex, 3x img, übereinander, position z-index/Minuswerte -->
-                <div>
-                    <img src="" alt="">
-                </div>
-                <div>
-                    <img src="" alt="">
-                </div>
-                <div>
-                    <img src="" alt="">
-                </div>
-                <div>
-                    <!-- <p><span>430+</span>Happy Customers</p> -->
-                </div>
-            </div>
+                <p class="customer-reference"><span>430+ </span> Happy Customers</p>       
         <div>
     </section>
 
@@ -167,7 +163,57 @@
     </section>
     <section><!-- form +js--></section> 
 </main>
-    <footer></footer>
+    <footer>
+        <div>
+            <div class="footer-navigation">
+                <div class="logo-left">
+                    <img src="./assets/img/logo-icon-nutritionist.png" alt="company logo green design">
+                    <h2>Nutritionist</h2>
+                </div>
+                
+                <div class="menu">
+                    <div>
+                        <a href="#">Home</a>
+                        <a href="#">About</a>
+                        <a href="#">Team</a>
+                        <a href="#">Process</a>
+                        <a href="#">Pricing</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Contact</a>
+                    </div>
+                    <div class="anchor-to-top"></div>   
+                        <a href="" class="btn-top">Go To Top</a>
+                        <img src="./assets/img/arrow-small-up.png" alt="arrow direction up">
+                    </div>   
+                </div>
+            </div>
+        </div>
+            <div class="footer-imprint">
+                <div class="imprint-info">
+                    <div>
+                        <img src="./assets/img/Icon-letter.png" alt="icon mail">
+                        <p>hello@squareup.com</p>
+                    </div>
+                    <div>
+                        <img src="./assets/img/Icon-phone.png" alt="icon phone">
+                        <p>hello@squareup.com</p>
+                    </div>
+                    <div>
+                        <img src="./assets/img/Icon-here.png" alt="icon here">
+                        <p>hello@squareup.com</p>
+                    </div>
+                </div> 
+
+                <div class="imprint-copyright">
+                    <p>© 2023 Nutritionist. All rights reserved.</p>
+                </div>
+            </div>
+
+            
+
+
+
+    </footer>
 
     
 </body>

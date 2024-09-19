@@ -26,11 +26,11 @@
 html{
     font-size: 10px;
 }
-/* 
+
 body{
-    height: 100vh;
+    height: 100%;
     width: 0 auto;
-} */
+}
 
 /* root{
     für variablen, farben etc. 
@@ -156,49 +156,164 @@ h2{
     display: flex;
 }
 
-/* welcome section */
+/* ----welcome section----------------------------------- */
 .welcome{
-    background-color: #FAFDF2;
+    background-color: #F6FBE9;
     display: flex;
-    /* width: 100vw; */
     justify-content: center;
     gap: 2.5rem;
 }
 
-.welcome-left{
-    background-color: #E5F5BD; 
+.welcome-img-container{
+    background-color: #F6FBE9; 
+    width: 50%;
 }
 
-.welcome-left img{
+.welcome-img-container img{
     width: 100%;
     height: 100%;
-
+    background-color: #F6FBE9; 
 }
 
-.welcome-right{
+.welcome-description{
     display: flex;
-    width: 100%;
-    padding-top: 14.5rem;
+    width: 50%;
+    padding-top: 8.5rem;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
-h1{
-    font-family: "Urbanist-Medium";
-    font-size: 5.8rem;
-    font-weight: 700;
-    color: #1A3129;
+.border-green{
+    border-bottom: 1px solid #CBEA7B;
+    display: inline-block;
+    margin-bottom: 1rem;
 }
 
 .welcome h3{
     font-family: "Urbanist-Regular";
-    font-size: 3.4rem;
+    font-size: 2rem;
     font-weight: 600;
+    color: #1A3129;
+    border-bottom: 1px solid #CBEA7B;
+}
+
+.personalized{
+    padding: 0.5rem 0;
+    width: 30rem;
+}
+
+h1{
+    font-family: "Urbanist-Medium";
+    font-size: 4rem;
+    font-weight: 700;
     color: #1A3129;
 }
 
-.welcome-right p{
+.welcome-description p{
     font-family: "Urbanist-Regular";
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     font-weight: 500;
     color: #4C4C4D;
+    background-color :#F6FBE9;
+    margin-bottom: 1rem;
+    display: inline-block;
 }
 
+.welcome-buttons{
+    display: flex;
+    gap: 1.3rem;
+}
+
+.starter-btn{
+    background-color: #CBEA7B;
+    border: 1px solid #CBEA7B;
+    text-decoration: none;
+    font-family: "Urbanist-Bold";
+    color: #1A3129;
+    text-align: center;
+    padding: 1em 1.5em;
+    border-radius: 0.6rem;
+}
+
+.demo-btn{
+    background-color: #F6FBE9;
+    border: 1px solid #CBEA7B;
+    text-decoration: none;
+    font-family: "Urbanist-Bold";
+    color: #1A3129;
+    text-align: center;
+    padding: 1em 1.5em;
+    border-radius: 0.6rem;
+}
+
+/* --------------- testimonials ----------- ------*/
+.customers{
+    display: flex;
+    gap: 1.3rem;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.customer-profiles{
+    display: flex;
+    align-items: center;
+    margin-top: 5rem;
+    gap: 1.3rem;
+}
+
+.customer-profiles img{
+    width: 4.5rem;
+    height: 4.5rem;
+    margin-right: -2.4rem;
+}
+
+.customer-profiles img:nth-last-of-type(){
+    margin-right: 0;
+}
+
+.customer-reference{
+    color: #1A3129;
+    font-family: "Urbanist-Regular";
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-left: 1rem;
+    display: flex;
+}
+
+.customer-reference span{
+    color: #98989A;
+}
+
+
+/* --------------------------footer styling -------------- */
+footer{
+    background-color: #1A3129;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+footer p, a{
+    color: #FFF;
+    font-family: "Urbanist-Regular";
+    font-size: 1.2rem;
+    font-weight: 100;
+    text-decoration: none;
+}
+
+.logo-left{
+    padding: 0 10px;
+    width: 30em;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    letter-spacing: 0.1rem;
+}
+
+.footer-imprint{}
+
+.imprint-info{}
+
+.imprint-copyright{}
