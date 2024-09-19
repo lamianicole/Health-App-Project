@@ -1,0 +1,56 @@
+@font-face{
+    font-family: "Urbanist-Bold";
+    src: url("../fonts/Urbanist-Bold.ttf");
+}
+
+@font-face{
+    font-family: "Urbanist-ExtraBold";
+    src: url("../fonts/Urbanist-ExtraBold.ttf");
+}
+
+@font-face{
+    font-family: "Urbanist-Medium";
+    src: url("../fonts/Urbanist-Medium.ttf");
+}
+
+@font-face{
+    font-family: "Urbanist-Regular";
+    src: url("../fonts/Urbanist-Regular.ttf");
+}
+
+@font-face{
+    font-family: "SemiBold";
+    src: url("../fonts/Urbanist-SemiBold.ttf");
+}
+
+html{
+    font-size: 10px;
+}
+
+/* root{
+    für variablen, farben etc. 
+} */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* 
+color: #FFF;
+helle Grüntöne
+color: #CBEA7B;
+color: #E5F5BD; 
+color: #F6FBE9;
+color: #FAFDF2;
+
+dunkle Grüntöne
+#1A3129;
+#234338;
+#346454;
+
+Grautöne
+#4C4C4D;
+#98989A;
+*/
