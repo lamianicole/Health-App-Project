@@ -108,7 +108,7 @@ header{
     padding-left: 10px;
     padding-right: 15px;
 }
-/* -------  navigation bar styling ----------- */
+/* -------  styling header: navbar ----------- */
 .navigation{
     display: flex;  
     padding: 20px;
@@ -164,7 +164,7 @@ h2{
     color: #1A3129;
 }
 
-/* ----welcome section------------------ */
+/* ----main welcome section------------------ */
 .welcome{
     background-color: #F6FBE9;
     display: flex;
@@ -291,13 +291,14 @@ h1{
 .customer-reference span{
     color: #98989A;
 }
-/* ---- section features intro ----  */
+/* --------- section features intro -------- */
 .features-intro{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 10vh;
     flex-direction: column;
+    margin-bottom: 4rem;
+    background-color: #F6FBE9;
 }
 
 .feat-head{
@@ -329,21 +330,7 @@ h1{
     color: #4C4C4D;
     margin-bottom: 2%;
 }
-
-h5{
-    font-family: "Urbanist-Medium";
-    font-size: 1.8rem;
-    font-weight: 600;
-    color: #1A3129;
-}
-
-p{
-    font-family: "Urbanist-Regular";
-    font-size: 1.3rem;
-    font-weight: 500;
-    color: #4C4C4D;
-}
-/* -- section features--- */
+/* ----------- section features info-grid--- */
 .grid-container{
     display: grid;
     grid-template-areas: 
@@ -365,7 +352,7 @@ p{
 
 .feature-right-column{
     display: grid;
-    background-color: #F6FBE9 ;
+    background-color: #F6FBE9;
     padding: 15px;
     gap: 2em;
 }
@@ -383,6 +370,93 @@ p{
     justify-content: flex-start;
     flex-direction: row;
 }
+
+h5{
+    font-family: "Urbanist-Medium";
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #1A3129;
+}
+
+p{
+    font-family: "Urbanist-Regular";
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #4C4C4D;
+}
+/* ----- section intro calorie calculator--- */
+.feat-head h4{
+    margin-top: 5rem;
+}
+/* -------- forms calorie calculator----- */
+.calorie-calculator{
+    /* height: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    flex: 1;
+    max-width: 80em;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+fieldset{
+    padding: 3.5rem;
+    border-radius: 0.5rem; 
+    background:  #F6FBE9;
+}
+
+.row{
+    display: flex;
+    gap: 2rem;
+}
+
+.group{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+label[for]{
+    font-family: "Urbanist-Regular";
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #4C4C4D;
+}
+
+input, textarea{
+    font-size: 1.3rem;
+    /* height: 2.4rem; */
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+textarea{
+    /* resize: none; */
+    height: 10rem;
+}
+
+.submit-button{
+    padding: 1rem 2 rem;
+    font-size: 1.3rem;
+    color: #1A3129;
+    background-color: #CBEA7B;
+    border: 1px solid #CBEA7B;
+    border-radius: 0.5rem; 
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+
+
+
+
+
 /* -------------footer styling -------------- */
 footer{
     background-color: #1A3129;

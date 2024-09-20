@@ -84,7 +84,7 @@
             <p>Welcome to the Feature Section of Nutritionist, your ultimate destination for all things nutrition and wellness.</p>
         </div>
     </section>
-<!------------------ section features intro -------->
+<!--------------- section features info-grid -------->
     <section>
     <div class="grid-container">
         <div class="feature-left-column">
@@ -135,52 +135,47 @@
         </div>
     </div>
     </section>
-<!-- section intro calorie calculator-->
-    <section>
-        <div class="calorie-intro">
+<!----------- section intro calorie calculator----->
+    <section class="features-intro">
+        <div class="feat-head">
             <h4>Test your daily Calorie Requirement</h4>
-            <p>To determine your daily calorie requirement, we need some information about your age, gender, weight, height and activity level. Enter this information to calculate your individual requirements.</p>
+        </div>
+        <div class="feat-description">
+            <p>Welcome to the Feature Section of Nutritionist, your ultimate destination for all things nutrition and wellness.</p>
         </div>
     </section>
-<!-- ----------forms calorie calculator----------- -->
-    <section>
-        <div class="form">
-            <form action="">
-                <fieldset>
-                    <div class="body">
-                        <label class="body-size" for="name">Body size (in cm)</label><br>
-                        <input type="text" name="" id="name" placeholder="" required>
-
-                        <input type="text" name="" id="name" placeholder="" required>
+<!------------forms calorie calculator ------------->
+    <section class="calorie-calculator">
+        <form method="post" action="#">
+            <fieldset>
+            <div class="form body">
+                <div class="row">
+                    <div class="group">
+                        <label for="body-size">Body Size (in cm)</label><input type="text" name="size" id="size" required/>
                     </div>
-        
-                    <div class="mail">
-                        <label class="redstar" for="mail">Weight</label><br>
-                        <input type="email" name="" id="mail" required>
+                    <div class="group">
+                        <label for="age">Age</label><input type="text" name="your age" id="age" required/>
                     </div>
-        
-                    <div class="submit">
-                        <input type="submit" value="Submit">
+                </div>
+                    <div class="row">
+                    <div class="group">
+                        <label for="weight">Weight</label><input type="text" name="your weight" id="weight" required/>
                     </div>
-                </fieldset>
-            </form> 
-            <!-- Body size (in cm)
-
-            age
-
-            weight
-
-            activity
-
-            gender
-
-            female
-
-            Male
-
-
-            calculate -->
-        </div>
+                    <div class="group">
+                        <label for="activity">Activity</label><input type="text" name="your activity" id="activity" required/>
+                    </div>
+                    <div>
+                        <p>Gender</p>
+                        <p>Female</p>
+                        <p>Male</p>
+                    </div>
+                    <div class="submit-button">
+                        <button type="submit" class="btn">Calculate</button>
+                    </div>
+                </div>
+            </div>
+            </fieldset>
+        </form>
     </section>
 </main>
 <!------------styling footer ------------------>
