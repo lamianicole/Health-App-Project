@@ -1,4 +1,4 @@
-/* ------------------ general styling ------------------ */
+/* ---------- general styling ------------------ */
 @font-face{
     font-family: "Urbanist-Bold";
     src: url("../fonts/Urbanist-Bold.ttf");
@@ -61,14 +61,14 @@ Grautöne
 #98989A;
 */
 
-/* ----------------------  styling header ---------------- */
+/* ------------ styling header ---------------- */
 header{
     background-color: #1A3129;
     width: 100vw;
     display: flex;
     justify-content: center;
 }
-/* ---------------    banner styling  -------------------- */
+/* ---------- banner styling ------------------- */
 .banner{
     display: flex;
     justify-content: center;
@@ -108,8 +108,7 @@ header{
     padding-left: 10px;
     padding-right: 15px;
 }
-
-/* --------------   navigation bar styling ----------- */
+/* -------  navigation bar styling ----------- */
 .navigation{
     display: flex;  
     padding: 20px;
@@ -165,12 +164,13 @@ h2{
     color: #1A3129;
 }
 
-/* ----welcome section----------------------------------- */
+/* ----welcome section------------------ */
 .welcome{
     background-color: #F6FBE9;
     display: flex;
     justify-content: center;
     gap: 2.5rem;
+    margin-bottom: 5rem;
 }
 
 .welcome-img-container{
@@ -256,8 +256,7 @@ h1{
     padding: 1em 1.5em;
     border-radius: 0.6rem;
 }
-
-/* --------------- testimonials ----------- ------*/
+/* --------------- testimonials ----------------*/
 .customers{
     display: flex;
     gap: 3.3rem;
@@ -279,10 +278,6 @@ h1{
     margin-right: -2.4rem;
 }
 
-.customer-profiles img:nth-last-of-type(){
-    margin-right: 0;
-}
-
 .customer-reference{
     color: #1A3129;
     font-family: "Urbanist-Regular";
@@ -296,44 +291,43 @@ h1{
 .customer-reference span{
     color: #98989A;
 }
-
-/* <!-- section features: grid bauen für 6er raster, dann flex icon/Intro oder 2xflex, testen. Raster hat gap--> */
-
-.first-pair{
+/* ---- section features intro ----  */
+.features-intro{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    flex-direction: column;
 }
 
-.personalized-nutrition{
+.feat-head{
     display: flex;
-    /* background-color: #E5F5BD; */
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
-.guidance{
+.feat-description{
     display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
-.second-pair{
-    display: flex;
+.feat-head h4{
+    font-family: "Urbanist-SemiBold";
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1A3129;
+    margin-bottom: 2%;
 }
 
-.food{
-    display: flex;
-}
-
-.meal{
-    display: flex;
-}
-
-.third-pair{
-    display: flex;
-}
-
-.lifestyle{
-    display: flex;
-}
-
-.nutritional{
-    display: flex;
+.feat-description p{
+    font-family: "Urbanist-Regular";
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #4C4C4D;
+    margin-bottom: 2%;
 }
 
 h5{
@@ -349,10 +343,47 @@ p{
     font-weight: 500;
     color: #4C4C4D;
 }
+/* -- section features--- */
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+    "a b"
+    "c d"
+    "e f";
+    background-color: #FAFDF2;
+    gap: 3em;
+    font-family: "Urbanist-Light";
+    padding: 4em;
+}
 
+.feature-left-column{
+    display: grid;
+    background-color: #F6FBE9;
+    padding: 15px;
+    gap: 2em;
+}
 
+.feature-right-column{
+    display: grid;
+    background-color: #F6FBE9 ;
+    padding: 15px;
+    gap: 2em;
+}
 
-/* --------------------------footer styling -------------- */
+.icons{
+    background-color: #E5F5BD;
+    margin-right: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.icon-head{
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+/* -------------footer styling -------------- */
 footer{
     background-color: #1A3129;
     width: 100vw;
@@ -377,9 +408,8 @@ footer{
 }
 
 .menu-mid{
-        display: flex;  
-        padding: 20px;
-        gap: 0 2em;
+    display: flex;  
+    padding: 20px;
 }
 
 footer p{
@@ -397,34 +427,7 @@ footer a{
     font-weight: 100;
     text-decoration: none;
 }
-
-/* --------------------section feautures intro-------------- */
-.features-intro{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 10vh;
-}
-
-.features-intro h4{
-    color: #1A3129;
-    font-family: "Urbanist-Medium";
-}
-
-/* ---------------------calorie intro -------------------- */
-
-/* ----------------------forms calorie calculator------------ */
-
-
-/* --------------------------imprint -------------- */
-
-footer{
-    display: flex;
-    flex-direction: column;
-    /* width: 100vw; */
-    height: 20%;
-}
-
+/* ----------------------imprint -------------- */
 .footer-imprint{
     display: flex;
     justify-content: space-between;
@@ -439,7 +442,6 @@ footer{
 .imprint-info{
     display: flex;
     flex-direction: row;
-
 }
 
 /* .imprint-copyright{} */

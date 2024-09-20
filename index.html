@@ -8,34 +8,32 @@
     <title>Project Health App</title>
 </head>
 <body>
+<!------------------styling header: banner -------->
     <header>
         <div>
             <div class="banner">
                 <div class="banner-left">
                     <img src="./assets/img/path-banner-left.png" alt="green pattern left">
                 </div> 
-
                 <div class="banner-mid">
                     <img src="./assets/img/Icon-banner-mid.png" alt="green ball icon">
                 </div>
                 <div>
-                    <p> Join Our Personalized Nutrition Demo For Free </p>
+                    <p>Join Our Personalized Nutrition Demo For Free</p>
                 </div>
                 <div>
                     <img src="./assets/img/banner-arrow.png" alt="arrow direction right">
                 </div>
-
                 <div class="banner-right">
                     <img src="./assets/img/path-banner-right.png" alt="green pattern right">
                 </div>
             </div>
-
+<!------------------styling header: navbar------->
             <div class="navigation">
                 <div class="logo-left">
                     <img src="./assets/img/logo-icon-nutritionist.png" alt="company logo green design">
                     <h2>Nutritionist</h2>
                 </div>
-                
                 <div class="logo-right">
                         <a href="#">Home</a>
                         <a href="#">About</a>
@@ -50,30 +48,24 @@
                 </div>
             </div>
         </div>
-
-
     </header>
-<!-------------------- welcome ----flexbox main, und butttons---------------->
+<!-------------- main welcome section ----------->
     <main>
     <section class="welcome">
         <div class="welcome-img-container">
             <img src="./assets/img/Image-sports.png" alt="smiling woman in sports dress">
         </div>
-
         <div class="welcome-description">
             <div class="border-green">
                 <h3>Transform Your ❤️  Health with</h3>
             </div>
             <div class="personalized"></div>
                 <h1>Personalized Nutrition Coaching</h1>
-
                 <p>Welcome to Nutritionist, your partner in achieving optimal health through personalized nutrition coaching. Our certified nutritionists are here to guide you on your weight loss journey, providing customized plans and ongoing support. Start your transformation today and experience the power of personalized nutrition coaching.</p>
-                <!-- buttons flex -->
             <div class ="welcome-buttons">
                 <a href="#" class="starter-btn">Get Starter Today</a>
                 <a href="#" class="demo-btn">Book a Demo</a> 
             </div>   
-                <!-- testimonials flex, 3x img, übereinander, Minuswerte -->
             <div class="customers">
             <div class="customer-profiles">
                 <img src="./assets/img/Image-testimonial-one.png" alt="female customer in pink sweater">
@@ -83,95 +75,66 @@
                 <p class="customer-reference"><span>430+</span>  Happy Customers</p> 
         <div>
     </section>
-
-<!-- section features: grid bauen für 6er raster, dann flex icon/Intro oder 2xflex, testen. Raster hat gap-->
-    <section>
-        <div class="features-intro">
+<!------------------ section features intro -------->
+    <section class="features-intro">
+        <div class="feat-head">
             <h4>Features</h4>
+        </div>
+        <div class="feat-description">
             <p>Welcome to the Feature Section of Nutritionist, your ultimate destination for all things nutrition and wellness.</p>
         </div>
     </section>
-        <!--hier 6er: icon+h5+p-->
+<!------------------ section features intro -------->
     <section>
-    <!------------------------- erstes Paar --------------->
-    <section class="first-pair">
-    <div class="personalized-nutrition">
-            <div>
-                <img src="./assets/img/Icon-personalized.png" alt="icon flower">
+    <div class="grid-container">
+        <div class="feature-left-column">
+            <div class="one">
+            <div class="icon-head">
+                <img src="./assets/img/Icon-personalized.png" alt="flower icon" class="icons">
+                <h5 class="teaser">Personalized Nutrition Plans</h5>
             </div>
-            <div>
-                <h5>Personalized Nutrition Plans</h5>
+                <p class="description">Receive a tailored nutrition plan designed specifically for your body and goals. Our <br> certified nutritionists will consider your unique needs, dietary preferences, and health <br> conditions to create a plan that suits you best.</p>
             </div>
-            <div>
-                <p>Receive a tailored nutrition plan designed specifically for your body and goals. Our certified nutritionists will consider your unique needs, dietary preferences, and health conditions to create a plan that suits you best.</p>
+            <div class="three">
+            <div class="icon-head">
+                <img src="./assets/img/Icon-food.png" alt="fork and knife icon" class="icons">
+                <h5 class="teaser">Food Tracking and Analysis</h5>
+                </div>
+                <p class="description">Effortlessly track your food intake using our user-friendly app. Our nutritionists will analyze your data to provide insights into your eating habits, help you identify areas for improvement, and make personalized recommendations.</p>
             </div>
-        </div>
-        <div class="guidance">
-            <div>
-                <img src="./assets/img/Icon-guidance.png" alt="diploma baret">
-            </div>
-            <div>
-                <h5>Guidance from Certified Nutritionists</h5>
-            </div>
-            <div>
-                <p>Our team of experienced and certified nutritionists will provide professional guidance and support throughout your journey. They will answer your questions, address your concerns, and keep you motivated as you work towards your goals.</p>
-            </div>
-        </div>
-    </section>    
-
-    <section class="second-pair">
-        <div class="food">
-            <div>
-                <img src="./assets/img/Icon-food.png" alt="fork and knife icon">
-            </div>
-            <div>
-                <h5>Food Tracking and Analysis</h5>
-            </div>
-            <div>
-            <p>Effortlessly track your food intake using our user-friendly app. Our nutritionists will analyze your data to provide insights into your eating habits, help you identify areas for improvement, and make personalized recommendations.</p>
+            <div class="five">
+                <div class="icon-head">
+                <img src="./assets/img/Icon-lifestyle.png" alt="iron icon" class="icons">
+                <h5 class="teaser">Lifestyle and Behavior Coaching</h5>
+                </div>
+                <p class="description">Achieving sustainable results requires more than just a diet plan. Our nutritionists will <br> work with you to develop healthy habits, address emotional eating, and provide <br> strategies to overcome obstacles along the way.</p>
             </div>
         </div>
-
-    
-        <div class="meal">
-            <div>
-                <img src="./assets/img/Icon-meal.png" alt="menu icon">
+        <div class="feature-right-column">
+            <div class="two">
+                <div class="icon-head">
+                <img src="./assets/img/Icon-guidance.png" alt="diploma baret" class="icons">
+                <h5 class="teaser">Guidance from Certified Nutritionists</h5>
+                </div>
+                <p class="description">Our team of experienced and certified nutritionists will provide professional guidance and support throughout your journey. They will answer your questions, address your concerns, and keep you motivated as you work towards your goals.</p>
             </div>
-            <div>
-                <h5>Meal Planning and Recipes</h5>
+            <div class="four">
+            <div class="icon-head">
+            <img src="./assets/img/Icon-meal.png" alt="clipboard" class="icons">
+            <h5 class="teaser">Meal Planning and Recipes</h5>
             </div>
-            <div>
-            <p>Access a vast collection of delicious and healthy recipes tailored to your dietary needs. Our nutritionists will also create personalized meal plans, making it easier for you to stay on track and enjoy nutritious meals.</p>
+            <p class="description">Access a vast collection of delicious and healthy recipes tailored to your dietary needs. <br> Our nutritionists will also create personalized meal plans, making it easier for you to <br> stay on track and enjoy nutritious meals.</p>
+            </div>
+            <div class="six">
+            <div class="icon-head">
+                <img src="./assets/img/Icon-workshops.png" alt="folder bag" class="icons">
+                <h5 class="teaser">Nutritional Education and Workshops</h5>
+            </div>
+                <p class="description">Expand your knowledge of nutrition through informative articles and educational <br> workshops. Our nutritionists will equip you with the knowledge and tools to make <br> informed choices for long-term success.</p>
             </div>
         </div>
+    </div>
     </section>
-
-    <section class="third-pair">
-            <div class="lifestyle">
-                <div>
-                    <img src="./assets/img/Icon-lifestyle.png" alt="iron icon">
-                </div>
-                <div>
-                    <h5>Lifestyle and Behavior Coaching</h5>
-                </div>
-                <div>
-                    <p>Achieving sustainable results requires more than just a diet plan. Our nutritionists will work with you to develop healthy habits, address emotional eating, and provide strategies to overcome obstacles along the way.</p>
-                </div>
-            </div>
-
-        <div class="nutritional">
-            <div>
-                <img src="./assets/img/Icon-workshops.png" alt="bag icon">
-            </div>
-            <div>
-                <h5>Nutritional Education and Workshops</h5>
-            </div>
-            <div>
-            <p>Expand your knowledge of nutrition through informative articles and educational workshops. Our nutritionists will equip you with the knowledge and tools to make informed choices for long-term success.</p>
-            </div>
-        </div>
-    </section>
-
 <!-- section intro calorie calculator-->
     <section>
         <div class="calorie-intro">
@@ -179,8 +142,8 @@
             <p>To determine your daily calorie requirement, we need some information about your age, gender, weight, height and activity level. Enter this information to calculate your individual requirements.</p>
         </div>
     </section>
-        <!-- ----------forms calorie calculator----------- -->
-    <!-- <section>
+<!-- ----------forms calorie calculator----------- -->
+    <section>
         <div class="form">
             <form action="">
                 <fieldset>
@@ -196,13 +159,11 @@
                         <input type="email" name="" id="mail" required>
                     </div>
         
-                   
-        
                     <div class="submit">
                         <input type="submit" value="Submit">
                     </div>
                 </fieldset>
-            </form> -->
+            </form> 
             <!-- Body size (in cm)
 
             age
@@ -220,10 +181,9 @@
 
             calculate -->
         </div>
-    
     </section>
 </main>
-<!--- -----------------------styling footer ------------------>
+<!------------styling footer ------------------>
     <footer>
         <div>
             <div class="footer-navigation">
@@ -273,7 +233,6 @@
                     <p>© 2023 Nutritionist. All rights reserved.</p>
                 </div>
             </div>
-
     </footer>
 </body>
 </html>
