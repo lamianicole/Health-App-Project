@@ -151,28 +151,52 @@
             <div class="form body">
                 <div class="row">
                     <div class="group">
-                        <label for="body-size">Body Size (in cm)</label><input type="text" name="size" id="size" required/>
+                        <label for="body-size">Body Size (in cm)</label><input type="text" name="size" value="" placeholder="" id="size" required/>
                     </div>
                     <div class="group">
-                        <label for="age">Age</label><input type="text" name="your age" id="age" required/>
+                        <label for="age">Age</label><input type="text" name="your age" value="" placeholder="" id="age" required/>
                     </div>
                 </div>
                     <div class="row">
                     <div class="group">
-                        <label for="weight">Weight</label><input type="text" name="your weight" id="weight" required/>
+                        <label for="weight">Weight</label><input type="text" name="your weight" value="" placeholder="" id="weight" required/>
                     </div>
                     <div class="group">
-                        <label for="activity">Activity</label><input type="text" name="your activity" id="activity" required/>
+                        <label for="activity">Activity</label><input type="text" name="your activity" value="" placeholder="" id="activity" required/>
+                        <br>
+                        <br>
                     </div>
-                    <div>
-                        <p>Gender</p>
-                        <p>Female</p>
-                        <p>Male</p>
+                    <div class="radio-buttons">
+                        <h6>Gender</h6>
+                        <div>
+                        <label for="select-gender">Female</label>
+                        <input type="radio" name="female" id="female" value="female"/>
+                        <label for="select-gender">Male</label><input type="radio" name="male" id="male" value="male"/>
+                        </div>
                     </div>
                     <div class="submit-button">
                         <button type="submit" class="btn">Calculate</button>
                     </div>
                 </div>
+            </div>
+            <div class="table">
+                <table>
+                    <tr>
+                      <th></th>
+                      <th>kcal</th>
+                      <th>kJ</th>
+                    </tr>
+                    <tr>
+                      <td>Basal Metabolic Rate</td>
+                      <td>1745.14</td>
+                      <td>7358.18</td>
+                     </tr>
+                     <tr>
+                       <td>Total Daily Energy Expenditure</td>
+                       <td>2636.20</td>
+                       <td>110137.30</td>
+                     </tr>
+                  </table>
             </div>
             </fieldset>
         </form>

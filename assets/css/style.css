@@ -33,34 +33,11 @@ body{
     width: 0 auto;
 }
 
-/* root{
-    für variablen, farben etc. 
-} */
-
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-
-/* 
-color: #FFF;
-helle Grüntöne
-color: #CBEA7B;
-color: #E5F5BD; 
-color: #F6FBE9;
-color: #FAFDF2;
-
-dunkle Grüntöne
-#1A3129;
-#234338;
-#346454;
-
-Grautöne
-#4C4C4D;
-#98989A;
-*/
-
 /* ------------ styling header ---------------- */
 header{
     background-color: #1A3129;
@@ -450,12 +427,23 @@ textarea{
     justify-content: flex-end;
 }
 
+.radio-buttons{
+    display: flex;
+    flex-direction: column;
+}
 
+.table{
+    display: flex;
+    border: 1px solid #CBEA7B;
+    border-spacing: 2rem; 
+}
 
-
-
-
-
+th, td{
+    font-size: 1rem;
+    color: #1A3129;
+    font-family: "Urbanist-Regular";
+    gap: 1rem;
+}
 
 /* -------------footer styling -------------- */
 footer{
@@ -469,6 +457,7 @@ footer{
     display: flex;  
     padding: 20px;
     gap: 0 2em;
+    flex-direction: row;
 }
 
 .f-logo-left{
@@ -484,6 +473,8 @@ footer{
 .menu-mid{
     display: flex;  
     padding: 20px;
+    flex-direction: row;
+    align-items: center;
 }
 
 footer p{
