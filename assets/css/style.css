@@ -39,7 +39,7 @@ body{
     padding: 0;
 }
 /* ------------ styling header ---------------- */
-header{
+header, footer{
     background-color: #1A3129;
     width: 100vw;
     display: flex;
@@ -56,7 +56,7 @@ header{
     background-color: #234338;
 }
 
-.banner-left{
+.banner-left, .f-logo-left{
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -75,7 +75,7 @@ header{
     align-items: center;
 }
 
-.banner p{
+.banner p, footer p{
     color: #FFF;
     font-family: "Urbanist-Regular";
     font-size: 1.8rem;
@@ -110,7 +110,7 @@ h2{
     font-size: 1.8rem;
 }
 
-.logo-right{
+.logo-right, .footer-menu-mid{
     width: 100em;
     display: flex;
     align-items: center;
@@ -119,7 +119,7 @@ h2{
     padding-right: 5em;
 }
 
-.logo-right a{
+.logo-right a, footer a{
     color: #FFF;
     font-family: "Urbanist-Regular";
     font-size: 1.8rem;
@@ -292,7 +292,7 @@ h1{
     justify-content: center;
 }
 
-.feat-head h4{
+h4{
     font-family: "Urbanist-SemiBold";
     font-size: 2.5rem;
     font-weight: 700;
@@ -406,14 +406,35 @@ label[for]{
 
 input, textarea{
     font-size: 1.3rem;
-    /* height: 2.4rem; */
     padding-left: 1rem;
     padding-right: 1rem;
 }
 
 textarea{
-    /* resize: none; */
     height: 10rem;
+}
+
+.radio-buttons h6{
+    display: flex;
+    justify-content: center;
+}
+
+h6{
+font-family: "Urbanist-Regular";
+font-size: 1.6rem;
+}
+
+.radio-buttons-flex{
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
 }
 
 .submit-button{
@@ -424,7 +445,8 @@ textarea{
     border: 1px solid #CBEA7B;
     border-radius: 0.5rem; 
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    width: 20%;
 }
 
 .radio-buttons{
@@ -444,69 +466,30 @@ th, td{
     font-family: "Urbanist-Regular";
     gap: 1rem;
 }
-
 /* -------------footer styling -------------- */
-footer{
-    background-color: #1A3129;
-    width: 100vw;
+.button-mail, .button-phone, .button-world{
+    /* display: flex; */
+}
+
+.btn-mail, .btn-phone, .btn-world{ 
+    text-decoration: none;
+    font-family: "Urbanist-Regular";
+    padding: 1em 2em;
+    border: 1px solid #1A3129;
+    border-radius: 0.6rem;
     display: flex;
+    width: 7%;
     justify-content: center;
-}
-
-.footer-navigation{
-    display: flex;  
-    padding: 20px;
-    gap: 0 2em;
-    flex-direction: row;
-}
-
-.f-logo-left{
-    padding: 0 10px;
-    width: 30em;
-    display: flex;
-    justify-content: flex-start;
     align-items: center;
-    gap: 1rem;
-    letter-spacing: 0.1rem;
-}
-
-.menu-mid{
-    display: flex;  
-    padding: 20px;
-    flex-direction: row;
-    align-items: center;
+    color: white;
 }
 
 footer p{
-    color: #FFF;
-    font-family: "Urbanist-Regular";
     font-size: 1.2rem;
     font-weight: 100;
-    text-decoration: none;
 }
-
-footer a{
-    color: #FFF;
-    font-family: "Urbanist-Regular";
-    font-size: 1.2rem;
-    font-weight: 100;
-    text-decoration: none;
-}
-/* ----------------------imprint -------------- */
-.footer-imprint{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border: 1px solid #2C5446;
-    border-radius: 0.6rem; 
-    margin: 0 20rem 1rem 20rem;
-    padding: 0 2rem;
-    background-color: #234338;
-}
-
-.imprint-info{
-    display: flex;
-    flex-direction: row;
-}
-
-/* .imprint-copyright{} */
+/* 
+.anchor-to-top img{
+    width: 15%;
+    height: 15%;
+} */

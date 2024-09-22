@@ -151,7 +151,8 @@
             <div class="form body">
                 <div class="row">
                     <div class="group">
-                        <label for="body-size">Body Size (in cm)</label><input type="text" name="size" value="" placeholder="" id="size" required/>
+                        <label for="body-size">Body Size (in cm)</label>
+                        <input type="text" name="" id="size" required/>
                     </div>
                     <div class="group">
                         <label for="age">Age</label><input type="text" name="your age" value="" placeholder="" id="age" required/>
@@ -166,37 +167,43 @@
                         <br>
                         <br>
                     </div>
+                </div>
                     <div class="radio-buttons">
                         <h6>Gender</h6>
+                    <div class="radio-buttons-flex">
                         <div>
-                        <label for="select-gender">Female</label>
                         <input type="radio" name="female" id="female" value="female"/>
-                        <label for="select-gender">Male</label><input type="radio" name="male" id="male" value="male"/>
+                        <label for="select-gender">Female</label>
+                        </div>
+                        <div>
+                        <input type="radio" name="male" id="male" value="male"/>
+                        <label for="select-gender">Male</label>
                         </div>
                     </div>
-                    <div class="submit-button">
-                        <button type="submit" class="btn">Calculate</button>
+                    </div>
+                    <div class="btn-container">
+                        <button class="submit-button"  type="submit" class="btn">Calculate</button>
                     </div>
                 </div>
             </div>
             <div class="table">
                 <table>
                     <tr>
-                      <th></th>
-                      <th>kcal</th>
-                      <th>kJ</th>
+                    <th></th>
+                    <th>kcal</th>
+                    <th>kJ</th>
                     </tr>
                     <tr>
-                      <td>Basal Metabolic Rate</td>
-                      <td>1745.14</td>
-                      <td>7358.18</td>
-                     </tr>
-                     <tr>
-                       <td>Total Daily Energy Expenditure</td>
-                       <td>2636.20</td>
-                       <td>110137.30</td>
-                     </tr>
-                  </table>
+                    <td>Basal Metabolic Rate</td>
+                    <td>1745.14</td>
+                    <td>7358.18</td>
+                    </tr>
+                    <tr>
+                    <td>Total Daily Energy Expenditure</td>
+                    <td>2636.20</td>
+                    <td>110137.30</td>
+                    </tr>
+                </table>
             </div>
             </fieldset>
         </form>
@@ -204,54 +211,42 @@
 </main>
 <!------------styling footer ------------------>
     <footer>
-        <div>
-            <div class="footer-navigation">
-                <div class="f-logo-left">
-                    <img src="./assets/img/logo-icon-nutritionist.png" alt="company logo green design">
-                    <h2>Nutritionist</h2>
-                </div>
-                
-                <div class="menu-mid">
-                    <div>
-                        <a href="#">Home</a>
-                        <a href="#">About</a>
-                        <a href="#">Team</a>
-                        <a href="#">Process</a>
-                        <a href="#">Pricing</a>
-                        <a href="#">Blog</a>
-                        <a href="#">Contact</a>
-                    </div>
-                    <div class="anchor-to-top"></div>   
-                        <a href="" class="btn-top">Go To Top</a>
-                        <img src="./assets/img/arrow-small-up.png" alt="arrow direction up">
-                    </div>   
-                </div>
+        <div class="navigation">
+            <div class="logo-left">
+                <img src="./assets/img/logo-icon-nutritionist.png" alt="company logo green design">
+                <h2>Nutritionist</h2>
+            </div>
+            <div class="f-menu-mid">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Team</a>
+                <a href="#">Process</a>
+                <a href="#">Pricing</a>
+                <a href="#">Blog</a>
+            </div>
+            <div class="anchor-to-top"></div>   
+                <a href="" class="btn-top">Go To Top</a>
+                <img src="./assets/img/arrow-small-up.png" alt="arrow direction up">
+            </div>  
+        </div>
+
+        <div class="banner">
+            <div class="button-mail">
+                <img src="./assets/img/Icon-letter.png" alt="icon mail">
+                <a href="#" class="btn-mail">hello@squareup.com</a>
+            </div>
+            <div class="button-phone">
+                <img src="./assets/img/Icon-phone.png" alt="icon phone">
+                <a href="#" class="btn-phone">+91 91813 23 2309</a>
+            </div>
+            <div class="button-world">
+                <img src="./assets/img/Icon-here.png" alt="icon here">
+                <a href="#" class="btn-world">Somewhere in the World</a>
+            </div> 
+            <div class="imprint-copyright"> 
+                <p>© 2023 Nutritionist. All rights reserved.</p>
             </div>
         </div>
-            <div class="footer-imprint">
-                <div class="imprint-info">
-                    <div>
-                        <img src="./assets/img/Icon-letter.png" alt="icon mail">
-                    </div>
-                    <div>
-                        <p>hello@squareup.com</p>
-                    </div>
-                    <div>
-                        <img src="./assets/img/Icon-phone.png" alt="icon phone">
-                    <div>
-                        <p>+91 91813 23 2309</p>
-                    </div>
-                    <div>
-                        <img src="./assets/img/Icon-here.png" alt="icon here">
-                        <div>
-                        <p>Somewhere in the World</p>
-                    </div>
-                </div> 
-
-                <div class="imprint-copyright">
-                    <p>© 2023 Nutritionist. All rights reserved.</p>
-                </div>
-            </div>
     </footer>
 </body>
 </html>
