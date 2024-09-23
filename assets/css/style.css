@@ -56,7 +56,7 @@ header, footer{
     background-color: #234338;
 }
 
-.banner-left, .f-logo-left{
+.banner-left{
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -110,7 +110,7 @@ h2{
     font-size: 1.8rem;
 }
 
-.logo-right, .footer-menu-mid{
+.logo-right{
     width: 100em;
     display: flex;
     align-items: center;
@@ -481,12 +481,28 @@ th, td{
     color: white;
 }
 
+.footer-navigation{
+    display: flex;  
+    padding: 20px;
+    gap: 0 2em;
+    margin-left: 2.3rem;
+    margin-right: 2.3rem;
+    width: 75%;
+}
+
+.f-menu-mid{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.f-menu-right{
+    display: flex;
+    align-items: center;
+    /* justify-content: flex-end; */
+}
+
 footer p{
     font-size: 1.2rem;
     font-weight: 100;
 }
-
-/* .btn-arrow-up img{ */
-    /* width: 15%; */
-    /* height: 15%; */
-/* } */
